@@ -11,7 +11,7 @@ ul {
 li a {
   height: 22.5rem;
   width: 20rem;
-  border: 1px solid whitesmoke;
+  border: 1px solid $secondary-color;
   border-radius: 1rem;
   margin: 0.5rem;
   display: flex;
@@ -64,7 +64,7 @@ li a img {
 
 .origins span {
   border-radius: 2rem;
-  background-color: whitesmoke;
+  background-color: $secondary-color;
   display: inline-block;
   font-size: 0.8rem;
   color: grey;
@@ -82,9 +82,14 @@ li a img {
   position: absolute;
   bottom: 0;
   left: 0.9rem;
-  background: white;
+  background: $secondary-color;
   padding: 0.3rem 100% 0 0;
   color: #414141;
   margin-top: 0.7rem;
   font-size: 1.1rem;
+}
+
+:host ::ng-deep .sr-only,
+:host ::ng-deep .visually-hidden {
+  display: none !important;
 }

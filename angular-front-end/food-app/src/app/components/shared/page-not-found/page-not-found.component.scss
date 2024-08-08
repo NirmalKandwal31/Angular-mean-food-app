@@ -1,0 +1,26 @@
+@import "../../../../styles/color";
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 100;
+  height: 15rem;
+}
+a {
+  font-size: 1.1rem;
+  color: $secondary-color;
+  background: $checkout-button;
+  display: block;
+  border-radius: 10rem;
+  text-align: center;
+  opacity: 0.7;
+  padding: 0.7rem 1rem;
+  margin: 1rem;
+}
+
+a:hover {
+  opacity: 1;
+  cursor: pointer;
+}

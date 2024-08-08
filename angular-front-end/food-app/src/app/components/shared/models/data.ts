@@ -1,4 +1,5 @@
 import { Food } from './Food';
+import { Tag } from './Tag';
 
 export const FOODS: Food[] = [
   {
@@ -16,7 +17,7 @@ export const FOODS: Food[] = [
     id: '2',
     name: 'Burger',
     price: 5,
-    tags: ['Fast Food', 'American'],
+    tags: ['Fast Food', 'American', 'Burger'],
     favourite: false,
     stars: 4.0,
     imageUrl: 'assets/images/food-2.jpg',
@@ -27,7 +28,7 @@ export const FOODS: Food[] = [
     id: '3',
     name: 'Pizza',
     price: 10,
-    tags: ['Fast Food', 'Italian'],
+    tags: ['FastFood', 'Italian', 'Pizza'],
     favourite: true,
     stars: 4.5,
     imageUrl: 'assets/images/food-1.jpg',
@@ -38,7 +39,7 @@ export const FOODS: Food[] = [
     id: '4',
     name: 'Burger',
     price: 5,
-    tags: ['Fast Food', 'American'],
+    tags: ['FastFood', 'American', 'Burger'],
     favourite: false,
     stars: 4.0,
     imageUrl: 'assets/images/food-2.jpg',
@@ -49,7 +50,7 @@ export const FOODS: Food[] = [
     id: '5',
     name: 'Pizza',
     price: 10,
-    tags: ['Fast Food', 'Italian'],
+    tags: ['Fast Food', 'Italian', 'Pizza'],
     favourite: true,
     stars: 4.5,
     imageUrl: 'assets/images/food-1.jpg',
@@ -58,13 +59,21 @@ export const FOODS: Food[] = [
   },
   {
     id: '6',
-    name: 'Burger',
+    name: 'Vegetable Pizza',
     price: 5,
-    tags: ['Fast Food', 'American'],
+    tags: ['FastFood', 'Pizza', 'Lunch'],
     favourite: false,
     stars: 4.0,
-    imageUrl: 'assets/images/food-2.jpg',
+    imageUrl: 'assets/images/food-5.jpg',
     origins: ['USA'],
     cookTime: '15-20 minutes',
   },
+];
+
+export const sample_tags: Tag[] = [
+  { name: 'All', count: 6 },
+  { name: 'Pizza', count: 6 },
+  { name: 'Burger', count: 4 },
+  { name: 'Fries', count: 5 },
+  { name: 'ColdDrink', count: 6 },
 ];

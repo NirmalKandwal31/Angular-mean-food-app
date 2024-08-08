@@ -8,7 +8,7 @@ import { HomeComponent } from './components/pages/home/home.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'food-app';

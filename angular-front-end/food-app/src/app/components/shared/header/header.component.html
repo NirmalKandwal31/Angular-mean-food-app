@@ -7,7 +7,7 @@
                     <a routerLink="/">Login</a>
                 </li>
                 <li class="menu-container">
-                    <a routerLink="/dashboard">Nirmal</a>
+                    <a routerLink="/dashboard">Dashboard</a>
                     <div class="menu">
                         <a routerLink="/profile">Profile</a>
                         <a routerLink="/orders">Orders</a>
@@ -15,7 +15,7 @@
                     </div>
                 </li>
                 <li>
-                    <a routerLink="/cart-page">Cart <span>5</span></a>
+                    <a routerLink="/cart-page">Cart <span>{{cardQuantity()}}</span></a>
                 </li>
             </ul>
         </nav>
